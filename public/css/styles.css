@@ -1,0 +1,145 @@
+/* Root Variables */
+:root {
+  --bs-primary: #7c3aed;
+  --bs-primary-rgb: 124, 58, 237;
+  --bs-primary-hover: #6d28d9;
+  --bs-primary-light: #ede9fe;
+  --bs-secondary: #4b5563;
+  --bs-success: #059669;
+  --bs-info: #0ea5e9;
+  --bs-warning: #f59e0b;
+  --bs-danger: #dc2626;
+  --bs-light: #f9fafb;
+  --bs-dark: #111827;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  padding-top: 72px; /* Account for fixed navbar */
+}
+
+/* Navigation */
+.navbar-custom {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  color: var(--bs-primary);
+}
+
+.navbar-custom .nav-link {
+  color: var(--bs-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.15s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--bs-primary);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-primary-hover));
+  padding: 6rem 0;
+  margin-top: -72px; /* Offset the navbar padding */
+}
+
+/* Custom Button Styles */
+.btn-purple {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: white;
+}
+
+.btn-purple:hover,
+.btn-purple:focus {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+  color: white;
+}
+
+.btn-outline-purple {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-purple:hover,
+.btn-outline-purple:focus {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Card */
+.course-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Feature Icons */
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+  background-color: var(--bs-primary-light);
+  color: var(--bs-primary);
+}
+
+.feature-icon i {
+  font-size: 1.5rem;
+}
+
+/* Stats Section */
+.stats-card {
+  transform: translateY(-50%);
+  margin-bottom: -3rem;
+}
+
+/* Utilities */
+.text-purple {
+  color: var(--bs-primary) !important;
+}
+
+.bg-purple {
+  background-color: var(--bs-primary) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+  }
+  
+  .navbar-custom {
+    padding: 0.5rem 0;
+  }
+  
+  .stats-card {
+    transform: none;
+    margin-bottom: 2rem;
+  }
+}
