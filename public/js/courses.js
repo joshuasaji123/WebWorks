@@ -14,6 +14,7 @@ const Courses = {
                     lessons: [
                         {
                             title: 'Variables and Data Types',
+                            description: 'Learn about the different types of variables and data types in JavaScript, and how to use them effectively.',
                             resources: [
                                 { title: 'MDN - JavaScript Basics', url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics' },
                                 { title: 'JavaScript.info - Variables', url: 'https://javascript.info/variables' }
@@ -21,9 +22,18 @@ const Courses = {
                         },
                         {
                             title: 'Functions and Scope',
+                            description: 'Understand how functions work in JavaScript, including scope and closures.',
                             resources: [
                                 { title: 'MDN - Functions', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions' },
                                 { title: 'JavaScript.info - Functions', url: 'https://javascript.info/function-basics' }
+                            ]
+                        },
+                        {
+                            title: 'Control Flow',
+                            description: 'Explore control flow statements like if-else, switch, and loops to control the execution of your code.',
+                            resources: [
+                                { title: 'MDN - Control Flow', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling' },
+                                { title: 'JavaScript.info - Conditional Operators', url: 'https://javascript.info/ifelse' }
                             ]
                         }
                     ]
@@ -33,9 +43,26 @@ const Courses = {
                     lessons: [
                         {
                             title: 'Promises and Async/Await',
+                            description: 'Learn about asynchronous programming in JavaScript using Promises and the async/await syntax.',
                             resources: [
                                 { title: 'MDN - Promises', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise' },
                                 { title: 'JavaScript.info - Async/Await', url: 'https://javascript.info/async-await' }
+                            ]
+                        },
+                        {
+                            title: 'Closures',
+                            description: 'Dive into closures and understand how they enable powerful patterns in JavaScript.',
+                            resources: [
+                                { title: 'MDN - Closures', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures' },
+                                { title: 'JavaScript.info - Closures', url: 'https://javascript.info/closure' }
+                            ]
+                        },
+                        {
+                            title: 'Modules',
+                            description: 'Learn how to organize your code using JavaScript modules.',
+                            resources: [
+                                { title: 'MDN - JavaScript Modules', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules' },
+                                { title: 'JavaScript.info - Modules', url: 'https://javascript.info/modules-intro' }
                             ]
                         }
                     ]
@@ -56,9 +83,191 @@ const Courses = {
                     lessons: [
                         {
                             title: 'Components and Props',
+                            description: 'Understand the building blocks of React applications: components and props.',
                             resources: [
                                 { title: 'React Docs - Components', url: 'https://react.dev/learn/your-first-component' },
                                 { title: 'React Docs - Props', url: 'https://react.dev/learn/passing-props-to-a-component' }
+                            ]
+                        },
+                        {
+                            title: 'State and Lifecycle',
+                            description: 'Learn how to manage state and lifecycle methods in your React components.',
+                            resources: [
+                                { title: 'React Docs - State and Lifecycle', url: 'https://react.dev/learn/state-and-lifecycle' }
+                            ]
+                        },
+                        {
+                            title: 'Handling Events',
+                            description: 'Explore how to handle user inputs and events in React.',
+                            resources: [
+                                { title: 'React Docs - Handling Events', url: 'https://react.dev/learn/handling-events' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: 'Advanced React',
+                    lessons: [
+                        {
+                            title: 'React Hooks',
+                            description: 'Master React Hooks to write cleaner and more efficient functional components.',
+                            resources: [
+                                { title: 'React Docs - Hooks', url: 'https://react.dev/learn/hooks-overview' }
+                            ]
+                        },
+                        {
+                            title: 'Context API',
+                            description: 'Learn to manage global state in your applications using the Context API.',
+                            resources: [
+                                { title: 'React Docs - Context', url: 'https://react.dev/learn/context' }
+                            ]
+                        },
+                        {
+                            title: 'Performance Optimization',
+                            description: 'Understand how to optimize the performance of your React applications.',
+                            resources: [
+                                { title: 'React Docs - Optimizing Performance', url: 'https://react.dev/learn/optimizing-performance' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'node-express',
+            title: 'Node.js & Express',
+            description: 'Create scalable backend applications',
+            image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=400',
+            level: 'intermediate',
+            duration: '12 weeks',
+            category: 'backend',
+            modules: [
+                {
+                    title: 'Node.js Basics',
+                    lessons: [
+                        {
+                            title: 'Introduction to Node.js',
+                            description: 'Get started with Node.js and understand its core concepts and architecture.',
+                            resources: [
+                                { title: 'Node.js Official Docs', url: 'https://nodejs.org/en/docs/guides/getting-started-guide/' }
+                            ]
+                        },
+                        {
+                            title: 'Modules and Packages',
+                            description: 'Learn how to use modules and manage dependencies with NPM.',
+                            resources: [
+                                { title: 'Node.js Official Docs - Modules', url: 'https://nodejs.org/api/modules.html' },
+                                { title: 'NPM Documentation', url: 'https://docs.npmjs.com/' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: 'Building with Express',
+                    lessons: [
+                        {
+                            title: 'Express Basics',
+                            description: 'Understand the basics of building web applications with Express.',
+                            resources: [
+                                { title: 'Express Official Docs', url: 'https://expressjs.com/en/starter/hello-world.html' }
+                            ]
+                        },
+                        {
+                            title: 'Middleware',
+                            description: 'Learn how to use middleware to handle requests and responses in Express.',
+                            resources: [
+                                { title: 'Express Official Docs - Middleware', url: 'https://expressjs.com/en/guide/using-middleware.html' }
+                            ]
+                        },
+                        {
+                            title: 'Routing',
+                            description: 'Master the routing capabilities of Express to create robust web applications.',
+                            resources: [
+                                { title: 'Express Official Docs - Routing', url: 'https://expressjs.com/en/guide/routing.html' }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'fullstack-web-dev',
+            title: 'Fullstack Web Development',
+            description: 'Master both frontend and backend technologies',
+            image: 'https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=400',
+            level: 'advanced',
+            duration: '16 weeks',
+            category: 'fullstack',
+            modules: [
+                {
+                    title: 'Frontend Development',
+                    lessons: [
+                        {
+                            title: 'HTML & CSS',
+                            description: 'Build a solid foundation in HTML and CSS to create beautiful and responsive web pages.',
+                            resources: [
+                                { title: 'MDN - HTML Basics', url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics' },
+                                { title: 'MDN - CSS Basics', url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics' }
+                            ]
+                        },
+                        {
+                            title: 'JavaScript Essentials',
+                            description: 'Learn the essential JavaScript skills needed to create dynamic web applications.',
+                            resources: [
+                                { title: 'MDN - JavaScript Basics', url: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics' }
+                            ]
+                        },
+                        {
+                            title: 'React',
+                            description: 'Master React to build interactive and modern web applications.',
+                            resources: [
+                                { title: 'React Docs - Getting Started', url: 'https://react.dev/learn/getting-started' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: 'Backend Development',
+                    lessons: [
+                        {
+                            title: 'Node.js & Express',
+                            description: 'Learn to build scalable backend applications using Node.js and Express.',
+                            resources: [
+                                { title: 'Node.js Official Docs', url: 'https://nodejs.org/en/docs/guides/getting-started-guide/' },
+                                { title: 'Express Official Docs', url: 'https://expressjs.com/en/starter/hello-world.html' }
+                            ]
+                        },
+                        {
+                            title: 'Databases (MongoDB)',
+                            description: 'Understand how to use MongoDB to store and manage data for your applications.',
+                            resources: [
+                                { title: 'MongoDB Official Docs', url: 'https://docs.mongodb.com/manual/' }
+                            ]
+                        },
+                        {
+                            title: 'Authentication',
+                            description: 'Learn how to implement authentication in your applications using Passport.js.',
+                            resources: [
+                                { title: 'Passport.js Documentation', url: 'http://www.passportjs.org/docs/' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    title: 'Deployment',
+                    lessons: [
+                        {
+                            title: 'Deploying with Heroku',
+                            description: 'Learn how to deploy your applications to Heroku for easy and scalable hosting.',
+                            resources: [
+                                { title: 'Heroku Documentation', url: 'https://devcenter.heroku.com/categories/deployment' }
+                            ]
+                        },
+                        {
+                            title: 'CI/CD Pipelines',
+                            description: 'Understand how to set up continuous integration and deployment pipelines with GitHub Actions.',
+                            resources: [
+                                { title: 'GitHub Actions Documentation', url: 'https://docs.github.com/en/actions' }
                             ]
                         }
                     ]
@@ -148,6 +357,7 @@ const Courses = {
                                             ${module.lessons.map(lesson => `
                                                 <div class="mb-3">
                                                     <h5 class="h6 mb-2">${lesson.title}</h5>
+                                                    <p>${lesson.description}</p>
                                                     <div class="list-group">
                                                         ${lesson.resources.map(resource => `
                                                             <a href="${resource.url}" 
