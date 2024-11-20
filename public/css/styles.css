@@ -143,3 +143,20 @@ body {
     margin-bottom: 2rem;
   }
 }
+
+footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none; /* Optional: Remove underline from links */
+}
+
+footer a:hover {
+  color: #ddd; /* Optional: Change color on hover */
+}
+
+footer .text-muted {
+  color: white !important; /* Ensure text-muted class text is also white */
+}
